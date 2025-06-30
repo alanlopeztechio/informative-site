@@ -19,7 +19,7 @@ export default function Navbar() {
                 <NavigationMenuTrigger className="text-white p-4 rounded shadow">
                     Quien lo usa?
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4 rounded shadow">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="#modulo1" className='hover:underline'>Dueños y Directores</Link></li>
                             <li><Link href="#modulo2" className='hover:underline'>Profesores y Educadores</Link></li>
@@ -31,7 +31,7 @@ export default function Navbar() {
                 <NavigationMenuTrigger className="text-white p-4 rounded shadow">
                     Módulos
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4 rounded shadow">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="#modulo1" className='hover:underline'>Módulo Académico</Link></li>
                             <li><Link href="#modulo2" className='hover:underline'>Módulo Comunicación</Link></li>
@@ -40,7 +40,6 @@ export default function Navbar() {
                     </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem><button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button></NavigationMenuItem>
-            <NavigationMenuItem><Link href="#contacto">Contacto</Link></NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
@@ -54,7 +53,6 @@ export default function Navbar() {
               <Link href="#inicio">Inicio</Link>
               <Link href="#funciones">Funciones</Link>
               <Link href="#precios">Precios</Link>
-              <Link href="#contacto">Contacto</Link>
             </nav>
           </SheetContent>
         </Sheet>

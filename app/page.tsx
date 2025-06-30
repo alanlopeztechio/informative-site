@@ -14,22 +14,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="funciones" className="py-20 text-center container mx-auto">
-          <h2 className="text-3xl font-bold text-red-800 mb-6">¿Qué ofrece?</h2>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800">
-            <li>✔ Gestión de alumnos y profesores</li>
-            <li>✔ Calificaciones automáticas</li>
-            <li>✔ Reportes y asistencia</li>
-            <li>✔ Panel para padres y alumnos</li>
-          </ul>
-        </section>
+        <section id="funciones" className="py-20 container mx-auto">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-70">
+    {/* Texto a la izquierda */}
+    <div className="md:w-[55%] text-center md:text-left">
+      <h2 className="text-3xl font-bold text-red-800 mb-4">¿Qué ofrece?</h2>
+      <ul className="grid grid-cols-1 gap-1 text-gray-800 text-base">
+        <li>✔ Gestión de alumnos y profesores</li>
+        <li>✔ Calificaciones automáticas</li>
+        <li>✔ Reportes y asistencia</li>
+        <li>✔ Panel para padres y alumnos</li>
+        <li>✔ Comunicación interna</li>
+        <li>✔ Módulo financiero</li>
+        <li>✔ Seguridad y respaldo de datos</li>
+        <li>✔ Personalización de reportes</li>
+      </ul>
+    </div>
+
+    {/* Imagen a la derecha */}
+    <div className="md:w-[50%] flex justify-center">
+      <img
+        src="/prupuesta-1160x653.jpg" // Cambia esto por la ruta real de tu imagen
+        alt="Sistema Escolar"
+        className="w-full max-w-md h-auto"
+      />
+    </div>
+  </div>
+</section>
+
 
         <section className="py-20 bg-gray-100 text-center">
           <h2 className="text-3xl font-bold mb-8 text-red-800">Galería del sistema</h2>
           <div className="flex flex-wrap justify-center gap-4 px-4">
-            <img src="/assets/1.png" alt="demo1" className="rounded-lg w-80" />
-            <img src="/assets/2.png" alt="demo2" className="rounded-lg w-80" />
-            <img src="/assets/3.png" alt="demo3" className="rounded-lg w-80" />
+            <img src="/1.png" alt="demo1" className="rounded-lg w-80" />
+            <img src="/2.png" alt="demo2" className="rounded-lg w-80" />
+            <img src="/3.png" alt="demo3" className="rounded-lg w-80" />
           </div>
         </section>
 
