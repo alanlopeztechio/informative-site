@@ -34,7 +34,7 @@ export default function Home() {
     {/* Imagen a la derecha */}
     <div className="md:w-[50%] flex justify-center">
       <img
-        src="/prupuesta-1160x653.jpg" // Cambia esto por la ruta real de tu imagen
+        src="/prupuesta-1160x653.jpg" 
         alt="Sistema Escolar"
         className="w-full max-w-md h-auto"
       />
