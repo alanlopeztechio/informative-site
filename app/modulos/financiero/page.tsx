@@ -7,13 +7,13 @@ export default function FinancieroPage() {
     <Navbar />
 
     <main>
-      <section className="py-20 container mx-auto">
+      <section className="py-30 container mx-auto">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-70">
         {/* Texto a la izquierda */}
         <div className="md:w-[55%] text-center md:text-left">
-          <h2 className="text-6xl font-bold text-red-800 mb-4">Sistema de cobros</h2>
+          <h2 className="text-6xl font-bold text-red-800 mb-4">Sistema de pagos</h2>
           <p className="text-gray-800 text-base">
-            Gestiona las finanzas de tu institución con facilidad. Controla pagos, recibos y reportes financieros.
+            Gestión de colegiaturas y pagos escolares eficientes
           </p>
           <br />
           <button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button>
@@ -32,13 +32,59 @@ export default function FinancieroPage() {
 
     <section>
       <div className="container mx-auto px-4 py-20">
-      <h2 className="text-3xl font-bold text-red-800 mb-4">Características del Sistema de Cobros</h2>
-      <p>El sistema de cobros ofrece una serie de características diseñadas para facilitar la gestión financiera de tu institución:</p>
-      <ul className="grid grid-cols-1 gap-1 text-gray-800 text-base">
-        <li>✔ Gestión de pagos en línea</li>
-        <li>✔ Envío automático de recibos</li>
-        <li>✔ Reportes financieros detallados</li>
-        <li>✔ Integración con bancos y plataformas de pago</li>
+      <h2 className="text-3xl font-bold text-red-800 mb-4 text-center">¿Por qué implementar un sistema de control de pagos escolares?</h2>
+      <br />s
+      <br />
+      <ul className="grid grid-cols-3 gap-10 text-gray-800 text-base">
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/correcto.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">90%</span>{' '}
+            <span className="font-bold">menos errores</span> en<br />
+            comparación con procesos<br />
+            manuales.
+          </p>
+        </li>
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/reloj.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">40%</span>{' '}
+            <span className="font-bold">de tiempo ahorrado</span> en tareas<br />
+            administrativa.
+          </p>
+        </li>
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/tarjeta.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">25%</span>{' '}
+            <span className="font-bold">más pagos realizados</span> gracias a la<br />
+            automatización y recordatorios.
+          </p>
+        </li>
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/lupa.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">73%</span>{' '}
+            <span className="font-bold">mejora en la transparencia<br /></span> con reportes 
+            en tiempo real.
+          </p>
+        </li>
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/risa.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">30%</span>{' '}
+            <span className="font-bold">más satisfacción<br /></span>por pagos en línea y<br />
+            notificaciones automáticas.
+          </p>
+        </li>
+        <li className="flex flex-col items-center text-center">
+          <img src="/iconos/diploma.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <p>
+            <span className="font-bold text-xl">50%</span>{' '}
+            <span className="font-bold">menos riesgo de sanciones fiscales </span>gracias a la facturación automática y 
+            actualizaciones constantes con bancos aliados y SAT.
+          </p>
+        </li>
       </ul>
       </div>
     </section>

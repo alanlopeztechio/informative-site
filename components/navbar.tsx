@@ -39,7 +39,8 @@ export default function Navbar() {
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem><button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button></NavigationMenuItem>
+            <NavigationMenuItem><Link href="#nosotros">Nosotros</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="#precios">Precios</Link></NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
