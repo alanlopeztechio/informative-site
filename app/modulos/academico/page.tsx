@@ -1,7 +1,16 @@
 import React from 'react'
-
-export default function page() {
+import Navbar from '@/components/navbar'
+export default function AcademicoPage() {
   return (
-    <div>page</div>
+    <>
+      <Navbar />
+
+      <h1>Modulo Académico</h1>
+      <p>Contenido del modulo académico</p>
+
+      <footer className="bg-gray-700 text-white py-4 text-center">
+        <p>&copy; 2025 Control Escolar</p>
+      </footer>
+    </>
   )
 }

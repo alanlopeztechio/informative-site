@@ -14,7 +14,7 @@ export default function Navbar() {
         {/* Desktop */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="flex gap-6">
-            <NavigationMenuItem><Link href="#inicio">Inicio</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="/">Inicio</Link></NavigationMenuItem>
             <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-white p-4 rounded shadow">
                     Quien lo usa?
@@ -33,9 +33,9 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-gray-700 text-white p-4 rounded shadow">
                         <ul className="grid gap-2 min-w-[200px]">
-                            <li><Link href="#modulo1" className='hover:underline'>Módulo Académico</Link></li>
-                            <li><Link href="#modulo2" className='hover:underline'>Módulo Comunicación</Link></li>
-                            <li><Link href="#modulo3" className='hover:underline'>Módulo Financiero</Link></li>
+                            <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
+                            <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
+                            <li><Link href="/modulos/financiero" className='hover:underline'>Módulo Financiero</Link></li>
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>

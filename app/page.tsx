@@ -7,7 +7,7 @@ export default function Home() {
       <Navbar />
 
       <main className="pt-20">
-        <section id="inicio" className="bg-cover bg-center text-black py-28 px-6" style={{ backgroundImage: 'url(/assets/background3.jpg)' }}>
+        <section id="inicio" className="bg-cover bg-center text-black py-28 px-6" style={{ backgroundImage: 'url(/background3.jpg)' }}>
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-bold">Sistema de Control Escolar</h1>
             <p className="mt-4 text-lg">Optimiza la gestión académica de tu escuela</p>
