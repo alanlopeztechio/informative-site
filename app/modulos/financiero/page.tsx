@@ -12,11 +12,11 @@ export default function FinancieroPage() {
         {/* Texto a la izquierda */}
         <div className="md:w-[55%] text-center md:text-left">
           <h2 className="text-6xl font-bold text-red-800 mb-4">Sistema de pagos</h2>
-          <p className="text-gray-800 text-base">
+          <p className="text-gray-700 text-base font-bold">
             Gestión de colegiaturas y pagos escolares eficientes
           </p>
           <br />
-          <button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button>
+          <button className='bg-red-800 text-white py-2 px-4 rounded cursor-pointer'>Solicitar Demo</button>
         </div>
 
         {/* Imagen a la derecha */}
@@ -33,7 +33,7 @@ export default function FinancieroPage() {
     <section>
       <div className="container mx-auto px-4 py-20">
       <h2 className="text-3xl font-bold text-red-800 mb-4 text-center">¿Por qué implementar un sistema de control de pagos escolares?</h2>
-      <br />s
+      <br />
       <br />
       <ul className="grid grid-cols-3 gap-10 text-gray-800 text-base">
         <li className="flex flex-col items-center text-center">
