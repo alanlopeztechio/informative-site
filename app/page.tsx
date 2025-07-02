@@ -18,7 +18,7 @@ export default function Home() {
   <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-70">
     {/* Texto a la izquierda */}
     <div className="md:w-[55%] text-center md:text-left">
-      <h2 className="text-3xl font-bold text-red-800 mb-4">¿Qué ofrece?</h2>
+      <h2 className="text-3xl font-bold text-blue-800 mb-4">¿Qué ofrece?</h2>
       <ul className="grid grid-cols-1 gap-1 text-gray-800 text-base">
         <li>✔ Gestión de alumnos y profesores</li>
         <li>✔ Calificaciones automáticas</li>
@@ -44,7 +44,7 @@ export default function Home() {
 
 
         <section className="py-20 bg-gray-100 text-center">
-          <h2 className="text-3xl font-bold mb-8 text-red-800">Galería del sistema</h2>
+          <h2 className="text-3xl font-bold mb-8 text-blue-800">Galería del sistema</h2>
           <div className="flex flex-wrap justify-center gap-4 px-4">
             <img src="/1.png" alt="demo1" className="rounded-lg w-80" />
             <img src="/2.png" alt="demo2" className="rounded-lg w-80" />
@@ -53,12 +53,12 @@ export default function Home() {
         </section>
 
         <section id="precios" className="py-20 text-center">
-          <h2 className="text-3xl font-bold text-red-800 mb-4">Precios</h2>
-          <p className="text-lg text-gray-700">Desde <strong className="text-red-700">$199 MXN</strong> al mes</p>
+          <h2 className="text-3xl font-bold text-blue-800 mb-4">Precios</h2>
+          <p className="text-lg text-gray-700">Desde <strong className="text-blue-700">$199 MXN</strong> al mes</p>
         </section>
 
         <section id="contacto" className="py-20 text-center">
-          <h2 className="text-3xl font-bold text-red-800 mb-4">Contáctanos</h2>
+          <h2 className="text-3xl font-bold text-blue-800 mb-4">Contáctanos</h2>
           <p>📧 ventas@controlescolar.com</p>
           <p>📱 <a href="https://wa.me/5215555555555" className="text-green-600 underline">WhatsApp</a></p>
         </section>

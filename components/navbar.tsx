@@ -12,14 +12,14 @@ export default function Navbar() {
         <h1 className="text-lg font-bold">Control Escolar</h1>
 
         {/* Desktop */}
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex ">
           <NavigationMenuList className="flex gap-6">
             <NavigationMenuItem><Link href="/">Inicio</Link></NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Quien lo usa?
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-gray-700 text-white p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="#modulo1" className='hover:underline'>Dueños y Directores</Link></li>
                             <li><Link href="#modulo2" className='hover:underline'>Profesores y Educadores</Link></li>
@@ -28,10 +28,10 @@ export default function Navbar() {
                     </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Módulos
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-gray-700 text-white p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
                             <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
@@ -45,7 +45,7 @@ export default function Navbar() {
         </NavigationMenu>
 
         {/* Mobile */}
-        <Sheet>
+        {/*<Sheet>
           <SheetTrigger asChild>
             <button className="md:hidden"><Menu /></button>
           </SheetTrigger>
@@ -56,7 +56,7 @@ export default function Navbar() {
               <Link href="#precios">Precios</Link>
             </nav>
           </SheetContent>
-        </Sheet>
+        </Sheet>*/}
       </div>
     </header>
   )
