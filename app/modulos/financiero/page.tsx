@@ -7,7 +7,7 @@ export default function FinancieroPage() {
     <Navbar />
 
     <main className="flex flex-col min-h-screen">
-      <section className="py-20 w-full max-w-7xl mx-auto flex-1">
+      <section className="py-20 w-full max-w-7xl mx-auto flex-1 bg-[url(/fondos/bg-hex.jpg)] bg-cover bg-center bg-no-repeat">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-4 md:px-10">
         {/* Texto a la izquierda */}
         <div className="md:w-1/2 text-center md:text-left">
