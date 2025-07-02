@@ -12,14 +12,14 @@ export default function Navbar() {
         <h1 className="text-lg font-bold">Control Escolar</h1>
 
         {/* Desktop */}
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden md:flex ">
           <NavigationMenuList className="flex gap-6">
-            <NavigationMenuItem><Link href="#inicio">Inicio</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="/">Inicio</Link></NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Quien lo usa?
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="#modulo1" className='hover:underline'>Dueños y Directores</Link></li>
                             <li><Link href="#modulo2" className='hover:underline'>Profesores y Educadores</Link></li>
@@ -28,24 +28,24 @@ export default function Navbar() {
                     </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Módulos
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
-                            <li><Link href="#modulo1" className='hover:underline'>Módulo Académico</Link></li>
-                            <li><Link href="#modulo2" className='hover:underline'>Módulo Comunicación</Link></li>
-                            <li><Link href="#modulo3" className='hover:underline'>Módulo Financiero</Link></li>
+                            <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
+                            <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
+                            <li><Link href="/modulos/financiero" className='hover:underline'>Módulo Financiero</Link></li>
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem><button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button></NavigationMenuItem>
-            <NavigationMenuItem><Link href="#contacto">Contacto</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="#nosotros">Nosotros</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="#precios">Precios</Link></NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
         {/* Mobile */}
-        <Sheet>
+        {/*<Sheet>
           <SheetTrigger asChild>
             <button className="md:hidden"><Menu /></button>
           </SheetTrigger>
@@ -54,10 +54,9 @@ export default function Navbar() {
               <Link href="#inicio">Inicio</Link>
               <Link href="#funciones">Funciones</Link>
               <Link href="#precios">Precios</Link>
-              <Link href="#contacto">Contacto</Link>
             </nav>
           </SheetContent>
-        </Sheet>
+        </Sheet>*/}
       </div>
     </header>
   )
