@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
 import TestimonioSlider from "@/components/TestimonioSlider";
+import HeroSection from "@/components/HeroMaestros/HeroSection";
 
 const MaestrosPage: React.FC = () => {
   const funciones: string[] = [
@@ -24,17 +25,8 @@ const MaestrosPage: React.FC = () => {
           className="bg-cover bg-center text-black py-28 px-6"
           style={{ backgroundImage: "url(/assets/background3.jpg)" }}
         >
-          <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-bold">
-              Herramientas que te liberan del papeleo y te devuelven el tiempo para enseñar
-            </h1>
-            <p className="mt-4 text-lg">
-              En lugar de gastar horas en hojas de cálculo, informes manuales 
-              y seguimiento disperso, nuestra plataforma pone en tus manos una 
-              herramienta que centraliza todo lo que necesitas para gestionar tu aula 
-              de forma efectiva, desde cualquier dispositivo y en cualquier momento.
-            </p>
-          </div>
+                 <HeroSection />
+          
         </section>
 
         {/* Funciones docentes */}

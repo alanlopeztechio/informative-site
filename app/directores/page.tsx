@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
 import TestimonioSlider from "@/components/TestimonioSlider";
-import HeroSection from "@/components/HeroSection";     
+import HeroSection from "@/components/HeroMaestros/HeroSection";     
 
 
 const MaestrosPage: React.FC = () => {
