@@ -25,37 +25,37 @@ export default function FinancieroPage() {
       icon: <User className="w-6 h-6 text-white" />,
       title: "Creación de expediente personalizado por cada alumno",
       description: "Nombre, CURP, grado, teléfono, correo electrónico, ficha médica, credenciales, número de contacto, etc.",
-      color: "bg-blue-400"
+      color: "bg-blue-500"
     },
     {
       icon: <GraduationCap className="w-6 h-6 text-white" />,
       title: "Promedio de calificaciones",
       description: "Consultar boletas de calificaciones. Podemos definir si los papás pueden ver o no las boletas.",
-      color: "bg-yellow-400"
+      color: "bg-blue-500"
     },
     {
       icon: <ClipboardList className="w-6 h-6 text-white" />,
       title: "Criterios de evaluación",
       description: "Descargar o consultar las calificaciones y observaciones para ser entregadas a los padres de familia o alumnos.",
-      color: "bg-pink-400"
+      color: "bg-blue-500"
     },
     {
       icon: <ListTodo className="w-6 h-6 text-white" />,
       title: "Pase de lista",
       description: "Conteo de las inasistencias de forma mensual y anual del alumno y del personal.",
-      color: "bg-blue-400"
+      color: "bg-blue-500"
     },
     {
       icon: <FileDown className="w-6 h-6 text-white" />,
       title: "Información descargable",
       description: "Descarga información en formato .xls, .pdf, etc.",
-      color: "bg-yellow-400"
+      color: "bg-blue-500"
     },
     {
       icon: <Calendar className="w-6 h-6 text-white" />,
       title: "Calendario",
       description: "Planea clases y eventos por medio de nuestro calendario digital.",
-      color: "bg-pink-400"
+      color: "bg-blue-500"
     }
   ]
 
@@ -96,7 +96,7 @@ export default function FinancieroPage() {
       <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">¿Por qué implementar un sistema de control de pagos escolares?</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-800 text-base">
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/correcto.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/controlar.png" alt="Controlar Pagos" width={80} height={80} className="w-19 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">90%</span>{' '}
             <span className="font-bold">menos errores</span> en<br />
@@ -105,7 +105,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/reloj.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/fin-de-reloj-de-arena.png" alt="Controlar Pagos" width={70} height={70} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">40%</span>{' '}
             <span className="font-bold">de tiempo ahorrado</span> en tareas<br />
@@ -113,7 +113,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/tarjeta.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/tarjeta-de-credito.png" alt="Controlar Pagos" width={100} height={100} className="w-21 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">25%</span>{' '}
             <span className="font-bold">más pagos realizados</span> gracias a la<br />
@@ -121,7 +121,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/lupa.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/busqueda.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">73%</span>{' '}
             <span className="font-bold">mejora en la transparencia<br /></span> con reportes 
@@ -129,7 +129,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/risa.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/usuarios-alt.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">30%</span>{' '}
             <span className="font-bold">más satisfacción<br /></span>por pagos en línea y<br />
@@ -137,7 +137,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/diploma.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Image src="/iconos/documento-firmado.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">50%</span>{' '}
             <span className="font-bold">menos riesgo de sanciones fiscales </span>gracias a la facturación automática y 
