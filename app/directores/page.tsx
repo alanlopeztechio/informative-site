@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
-import HeroSection from "@/components/Directores/HeroSection";     
+import HeroSection from "@/components/Directores/HeroSectionDirectores";     
 
 
 const MaestrosPage: React.FC = () => {
