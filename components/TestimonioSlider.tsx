@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import TestimonioCard from "./TestimonioCard";
+import Image from "next/image";
+
 
 interface Testimonio {
   name: string;
@@ -65,11 +67,14 @@ const TestimonioSlider: React.FC = () => {
       <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500">
         {/* Imagen */}
         <div className="md:w-1/2 flex justify-center items-center p-6">
-          <img
-            src={testimonios[current].imageUrl}
-            alt={`Foto de ${testimonios[current].name}`}
-            className="rounded-lg object-cover h-64 w-64"
-          />
+          <Image
+  src={`/assets/images/padres/${testimonios[current].imageUrl}`}
+  alt={`Foto de ${testimonios[current].name}`}
+  width={256} // equivale a w-64
+  height={256} // equivale a h-64
+  className="rounded-lg object-cover"
+/>
+
         </div>
 
         {/* Tarjeta de testimonio */}
