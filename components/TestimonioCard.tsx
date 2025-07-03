@@ -33,9 +33,7 @@ const TestimonioCard: React.FC<TestimonialProps> = ({
         <p className="font-semibold">
           {name}, {role}, {school}
         </p>
-        <a href="#" className="mt-4 underline">
-          Leer más
-        </a>
+       
       </div>
     </div>
   );
