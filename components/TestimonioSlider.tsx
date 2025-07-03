@@ -65,18 +65,7 @@ const TestimonioSlider: React.FC = () => {
   return (
     <div className="relative max-w-5xl mx-auto px-8">
       <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500">
-        {/* Imagen */}
-        <div className="md:w-1/2 flex justify-center items-center p-6">
-          <Image
-  src={`/assets/images/padres/${testimonios[current].imageUrl}`}
-  alt={`Foto de ${testimonios[current].name}`}
-  width={256} // equivale a w-64
-  height={256} // equivale a h-64
-  className="rounded-lg object-cover"
-/>
-
-        </div>
-
+       
         {/* Tarjeta de testimonio */}
         <TestimonioCard
           name={testimonios[current].name}
