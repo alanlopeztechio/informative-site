@@ -21,8 +21,8 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
-                            <li><Link href="#modulo1" className='hover:underline'>Dueños y Directores</Link></li>
-                            <Link href="/maestro">Profesores y Educadores</Link>
+                            <li> <Link href="/directores" className='hover:underline'>Dueños y Directores</Link></li>
+                            <Link href="/maestro" className='hover:underline'>Profesores y Educadores</Link>
                             <li><Link href="#modulo3" className='hover:underline'>Padres y Alumnos</Link></li>
                         </ul>
                     </NavigationMenuContent>
