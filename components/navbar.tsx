@@ -14,9 +14,9 @@ export default function Navbar() {
         {/* Desktop */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="flex gap-6">
-            <NavigationMenuItem><Link href="/">Inicio</Link></NavigationMenuItem>
+            <NavigationMenuItem className='text-white  p-1.75 px-4 rounded-lg hover:bg-gray-600'><Link href="/">Inicio</Link></NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
+                <NavigationMenuTrigger className="text-white p-4 hover:bg-gray-600">
                     Quien lo usa?
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
@@ -34,12 +34,12 @@ export default function Navbar() {
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
-                            <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
+                            <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Notificaciones</Link></li>
                             <li><Link href="/modulos/financiero" className='hover:underline'>Módulo Financiero</Link></li>
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem><Link href="#contacto">Contacto</Link></NavigationMenuItem>
+            <NavigationMenuItem className='text-white p-1.75 px-4 rounded-lg hover:bg-gray-600'><Link href="#contacto">Contacto</Link></NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
 
