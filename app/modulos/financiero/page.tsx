@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Navbar from '@/components/navbar'
 import { User, GraduationCap, ClipboardList, ListTodo, FileDown, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 export default function FinancieroPage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -79,9 +80,11 @@ export default function FinancieroPage() {
 
           {/* Imagen a la derecha */}
           <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
-            <img
+            <Image
               src="/imgs-F/finasas-enc.png"
               alt="Módulo Financiero"
+              width={400}
+              height={300}
               className="w-full max-w-md h-auto"
             />
           </div>
@@ -93,7 +96,7 @@ export default function FinancieroPage() {
       <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">¿Por qué implementar un sistema de control de pagos escolares?</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-800 text-base">
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/correcto.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/correcto.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">90%</span>{' '}
             <span className="font-bold">menos errores</span> en<br />
@@ -102,7 +105,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/reloj.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/reloj.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">40%</span>{' '}
             <span className="font-bold">de tiempo ahorrado</span> en tareas<br />
@@ -110,7 +113,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/tarjeta.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/tarjeta.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">25%</span>{' '}
             <span className="font-bold">más pagos realizados</span> gracias a la<br />
@@ -118,7 +121,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/lupa.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/lupa.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">73%</span>{' '}
             <span className="font-bold">mejora en la transparencia<br /></span> con reportes 
@@ -126,7 +129,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/risa.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/risa.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">30%</span>{' '}
             <span className="font-bold">más satisfacción<br /></span>por pagos en línea y<br />
@@ -134,7 +137,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <img src="/iconos/diploma.png" alt="Controlar Pagos" className="w-20 h-auto mb-2" />
+          <Image src="/iconos/diploma.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
           <p>
             <span className="font-bold text-xl">50%</span>{' '}
             <span className="font-bold">menos riesgo de sanciones fiscales </span>gracias a la facturación automática y 
@@ -149,9 +152,9 @@ export default function FinancieroPage() {
       <div className="container mx-auto px-4 py-20">
         <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">Galería del sistema</h2>
         <div className="flex flex-wrap justify-center gap-4">
-          <img src="/1.png" alt="demo1" className="rounded-lg w-80" />
-          <img src="/2.png" alt="demo2" className="rounded-lg w-80" />
-          <img src="/3.png" alt="demo3" className="rounded-lg w-80" />
+          <Image src="/1.png" alt="demo1" width={320} height={200} className="rounded-lg w-80" />
+          <Image src="/2.png" alt="demo2" width={320} height={200} className="rounded-lg w-80" />
+          <Image src="/3.png" alt="demo3" width={320} height={200} className="rounded-lg w-80" />
         </div>
       </div>
       </section>
@@ -173,9 +176,11 @@ export default function FinancieroPage() {
       <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-4 md:px-10">
         {/* Imagen a la izquierda */}
         <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-          <img
+          <Image
             src="/imgs-F/f2.jpg"
             alt="Módulo Financiero"
+            width={400}
+            height={300}
             className="w-full max-w-md h-auto"
           />
         </div>
