@@ -18,7 +18,7 @@ const testimonios: Testimonio[] = [
     school: "Escuela Helikon",
     message:
       " Es una ventana abierta al progreso escolar de mis hijos: me mantiene informado y me da la seguridad de saber que sé todo lo importante en tiempo real.",
-    imageUrl: "/assets/pablo.jpg",
+    imageUrl: "@/assets/pablo.jpg",
   },
   {
     name: "Carlos Rodríguez",
@@ -26,7 +26,7 @@ const testimonios: Testimonio[] = [
     school: "Colegio Nacional",
     message:
       "Gracias a esta plataforma estoy más involucrado en la educación de mi hijo que nunca.",
-    imageUrl: "/assets/carlos.jpg",
+    imageUrl: "@/assets/carlos.jpg",
   },
   {
     name: "Lucía Pérez",
@@ -34,7 +34,7 @@ const testimonios: Testimonio[] = [
     school: "Escuela Moderna",
     message:
       "Recibo notificaciones al instante y puedo comunicarme fácilmente con los maestros.",
-    imageUrl: "/assets/lucia.jpg",
+    imageUrl: "@/assets/lucia.jpg",
   },
 ];
 
