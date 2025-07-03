@@ -50,9 +50,23 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent>
             <nav className="flex flex-col gap-4 mt-10">
-              <Link href="#inicio">Inicio</Link>
-              <Link href="#funciones">Funciones</Link>
-              <Link href="#precios">Precios</Link>
+              <Link href="/">Inicio</Link>
+              <details>
+                <summary className="cursor-pointer py-2 px-1 font-semibold">Quien lo usa?</summary>
+                <ul className="flex flex-col gap-2 pl-4 mt-2">
+                  <li><Link href="/directores" className='p-1 px-2 rounded hover:bg-gray-600'>Dueños y Directores</Link></li>
+                  <li><Link href="/maestro" className='p-1 px-2 rounded hover:bg-gray-600'>Profesores y Educadores</Link></li>
+                  <li><Link href="#modulo3" className='p-1 px-2 rounded hover:bg-gray-600'>Padres y Alumnos</Link></li>
+                </ul>
+              </details>
+              <details>
+                <summary className="cursor-pointer py-2 px-1 font-semibold">Módulos</summary>
+                <ul className="flex flex-col gap-2 pl-4 mt-2">
+                  <li><Link href="/modulos/academico" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Académico</Link></li>
+                  <li><Link href="/modulos/comunicacion" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Notificaciones</Link></li>
+                  <li><Link href="/modulos/financiero" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Financiero</Link></li>
+                </ul>
+              </details>
               <Link href="#contacto">Contacto</Link>
             </nav>
           </SheetContent>
