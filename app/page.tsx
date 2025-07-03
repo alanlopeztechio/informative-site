@@ -34,7 +34,7 @@ export default function Home() {
 
         <section id="precios" className="py-20 text-center">
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Precios</h2>
-          <p className="text-lg text-gray-700">Desde <strong className="text-red-700">$199 MXN</strong> al mes</p>
+          <p className="text-lg text-gray-700">Desde <strong className="text-blue-700">$199 MXN</strong> al mes</p>
         </section>
 
         <section id="contacto" className="py-20 text-center">

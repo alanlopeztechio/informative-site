@@ -19,7 +19,7 @@ export default function Navbar() {
                 <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Quien lo usa?
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li> <Link href="/directores" className='hover:underline'>Dueños y Directores</Link></li>
                             <Link href="/maestro" className='hover:underline'>Profesores y Educadores</Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
                 <NavigationMenuTrigger className="text-white p-4 hover:bg-gray-600">
                     Módulos
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4">
+                <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
                             <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
