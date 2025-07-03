@@ -21,9 +21,9 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
-                            <li> <Link href="/directores" className='hover:underline'>Dueños y Directores</Link></li>
-                            <Link href="/maestro" className='hover:underline'>Profesores y Educadores</Link>
-                            <li><Link href="#modulo3" className='hover:underline'>Padres y Alumnos</Link></li>
+                            <li> <Link href="/directores" className='p-1 px-2 rounded hover:bg-gray-600'>Dueños y Directores</Link></li>
+                            <Link href="/maestro" className='p-1 px-2 rounded hover:bg-gray-600'>Profesores y Educadores</Link>
+                            <li><Link href="#modulo3" className='p-1 px-2 rounded hover:bg-gray-600'>Padres y Alumnos</Link></li>
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
@@ -33,9 +33,9 @@ export default function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
-                            <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
-                            <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Notificaciones</Link></li>
-                            <li><Link href="/modulos/financiero" className='hover:underline'>Módulo Financiero</Link></li>
+                            <li><Link href="/modulos/academico" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Académico</Link></li>
+                            <li><Link href="/modulos/comunicacion" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Notificaciones</Link></li>
+                            <li><Link href="/modulos/financiero" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Financiero</Link></li>
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
