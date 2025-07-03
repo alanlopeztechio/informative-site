@@ -15,7 +15,7 @@ export default function Home() {
         "Promedio de calificaciones.",
         "Pase de lista."
       ],
-      color: "bg-indigo-100",
+      color: "bg-indigo-500/10",
       imagen: "/imgs-A/academico.webp"
     },
     {
@@ -27,7 +27,7 @@ export default function Home() {
         "Envío de mensajes SMS.",
         "Envío de correos electrónicos."
       ],
-      color: "bg-green-100",
+      color: "bg-green-500/10",
       imagen: "/imgs-A/Chat.webp"
     },
     {
@@ -39,7 +39,7 @@ export default function Home() {
         "Reportes de pagos, cobros, etc.",
         "Asignación de pagos, becas, descuentos, etc."
       ],
-      color: "bg-red-100",
+      color: "bg-red-500/10",
       imagen: "/imgs-A/Financiero.webp"
     }
   ]
@@ -69,7 +69,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="py-20 bg-gray-100 text-center">
+        <section className="py-20 text-center">
           <h2 className="text-3xl font-bold mb-8 text-blue-800">Nuetros clientes</h2>
           <div className="flex flex-wrap justify-center gap-4 px-4">
             <Image src="/assets/1.png" alt="demo1" width={320} height={200} className="rounded-lg w-80" />
@@ -77,8 +77,8 @@ export default function Home() {
             <Image src="/assets/3.png" alt="demo3" width={320} height={200} className="rounded-lg w-80" />
           </div>
         </section>
-        
-        <section className="py-20 bg-gradient-to-b from-[#f6fcff] to-white w-full">
+
+        <section className="py-20 bg-gradient-to-b from-[#f6fcff] to-gray-100 w-full">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
 
         {/* Columna izquierda: módulos */}

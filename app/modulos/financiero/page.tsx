@@ -181,7 +181,7 @@ export default function FinancieroPage() {
             alt="Módulo Financiero"
             width={400}
             height={300}
-            className="w-full max-w-md h-auto"
+            className="w-full max-w-md h-auto rounded-lg shadow-lg"
           />
         </div>
 
