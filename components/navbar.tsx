@@ -48,7 +48,7 @@ export default function Navbar() {
           <SheetTrigger asChild>
             <button className="md:hidden"><Menu /></button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="bg-gray-700 text-white">
             <nav className="flex flex-col gap-4 mt-10">
               <Link href="/">Inicio</Link>
               <details>
