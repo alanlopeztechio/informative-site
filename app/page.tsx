@@ -1,9 +1,10 @@
 import Navbar from "@/components/navbar"
+
 export default function Home() {
   return (
     <>
       <Navbar />
-
+     
       <main className="pt-20">
         <section id="inicio" className="bg-cover bg-center text-black py-28 px-6" style={{ backgroundImage: 'url(/assets/background3.jpg)' }}>
           <div className="max-w-2xl mx-auto text-center">
