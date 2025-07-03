@@ -14,12 +14,12 @@ export default function Navbar() {
         {/* Desktop */}
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList className="flex gap-6">
-            <NavigationMenuItem><Link href="#inicio">Inicio</Link></NavigationMenuItem>
+            <NavigationMenuItem><Link href="/">Inicio</Link></NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 rounded hover:bg-gray-600">
                     Quien lo usa?
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-transparent text-black p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li> <Link href="/directores" className='hover:underline'>Dueños y Directores</Link></li>
                             <Link href="/maestro" className='hover:underline'>Profesores y Educadores</Link>
@@ -28,10 +28,10 @@ export default function Navbar() {
                     </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+                <NavigationMenuTrigger className="text-white p-4 hover:bg-gray-600">
                     Módulos
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+                <NavigationMenuContent className="bg-transparent text-black p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="/modulos/academico" className='hover:underline'>Módulo Académico</Link></li>
                             <li><Link href="/modulos/comunicacion" className='hover:underline'>Módulo Comunicación</Link></li>
@@ -39,7 +39,6 @@ export default function Navbar() {
                         </ul>
                     </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem><button className='bg-red-800 text-white py-2 px-4 rounded'>Solicitar Demo</button></NavigationMenuItem>
             <NavigationMenuItem><Link href="#contacto">Contacto</Link></NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
