@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
         <section className="py-20 bg-gray-100 text-center">
           <h2 className="text-3xl font-bold mb-8 text-blue-800">Galería del sistema</h2>
           <div className="flex flex-wrap justify-center gap-4 px-4">
-            <img src="/assets/1.png" alt="demo1" className="rounded-lg w-80" />
-            <img src="/assets/2.png" alt="demo2" className="rounded-lg w-80" />
-            <img src="/assets/3.png" alt="demo3" className="rounded-lg w-80" />
+            <Image src="/assets/1.png" alt="demo1" width={320} height={200} className="rounded-lg w-80" />
+            <Image src="/assets/2.png" alt="demo2" width={320} height={200} className="rounded-lg w-80" />
+            <Image src="/assets/3.png" alt="demo3" width={320} height={200} className="rounded-lg w-80" />
           </div>
         </section>
 
