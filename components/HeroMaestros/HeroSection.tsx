@@ -19,7 +19,7 @@ export default function HeroSection() {
         {/* Imagen decorativa */}
         <div className="w-full max-w-md">
          <Image
-        src="/assets/imgs-F/finasas-enc.png"
+        src="/imgs-F/finasas-enc.png"
         alt="Plataforma educativa"
         width={400} // ajusta según necesidad
         height={300}
