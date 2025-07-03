@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section className="w-full bg-white min-h-[90vh] flex items-center justify-center px-6">
@@ -16,11 +18,14 @@ export default function HeroSection() {
 
         {/* Imagen decorativa */}
         <div className="w-full max-w-md">
-          <img
-            src="/imgs-F/finasas-enc.png" // Asegúrate de que esta ruta e imagen existan
-            alt="Plataforma educativa"
-            className="w-full h-auto object-contain"
-          />
+         <Image
+  src="/assets/imgs-F/finasas-enc.png"
+  alt="Plataforma educativa"
+  width={400} // ajusta según necesidad
+  height={300}
+  className="w-full h-auto object-contain"
+/>
+
         </div>
 
       </div>
