@@ -5,12 +5,18 @@ import HeroSection from "@/components/Directores/HeroSectionDirectores";
 import SchoolFooter from "@/components/school-footer";
 import { BarChart3, GraduationCap, FileLock} from "lucide-react";
 import FeatureCard from "@/components/FeatureCard";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel"
+import { testimonials } from "@/data/testimonials"
+
+
+
 import {
  SquareChartGantt ,
   School ,
   ShieldPlus ,
 
 } from "lucide-react";
+
 
 const MaestrosPage: React.FC = () => {
     {/* Funciones directores*/}
@@ -88,8 +94,9 @@ const MaestrosPage: React.FC = () => {
 </section>
 
         {/* Testimonios slider */}
-        <section id="testimonios" className="py-20 text-center bg-gray-100">
-          
+        <section>
+          <TestimonialsCarousel testimonials={testimonials} />
+ 
         </section>
       </main>
 
