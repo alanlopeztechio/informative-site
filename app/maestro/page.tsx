@@ -116,13 +116,7 @@ const funciones = [
     ))}
   </div>
 </section>
-        {/* Testimonios slider */}
-        <section id="testimonios" className="py-20 text-center bg-gray-100">
-          <h2 className="text-center text-3xl font-bold text-pink-700 mb-10">
-            Nuestros usuarios lo dicen mejor
-          </h2>
-          
-        </section>
+       
       </main>
  {/* Footer */}
       <div>
