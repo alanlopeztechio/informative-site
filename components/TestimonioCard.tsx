@@ -14,7 +14,7 @@ const TestimonioCard: React.FC<TestimonialProps> = ({
   role,
   school,
   message,
-  imageUrl,
+  
 }) => {
   return (
     <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500">
