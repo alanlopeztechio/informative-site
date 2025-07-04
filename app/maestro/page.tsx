@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
-import TestimonioSlider from "@/components/TestimonioSlider";
 import HeroSection from "@/components/HeroMaestros/HeroSectionMaestros";
 import FeatureCard from "@/components/FeatureCard";
 import { BarChart3, GraduationCap, FileLock} from "lucide-react";
 import SchoolFooter from "@/components/school-footer";
+import ImagenesCarrusel from "@/components/imagenes-carrusel";
 import {
   CalendarCheck,
   Upload,
@@ -26,7 +26,6 @@ const funciones = [
   { texto: "Enviar mensajes a padres o alumnos", icono: <MessageSquare className="text-teal-600" /> },
   { texto: "Descargar reportes por grupo o materia", icono: <Download className="text-teal-600" /> },
 ];
-
 
   const secciones = [
     {
@@ -87,7 +86,19 @@ const funciones = [
             <FuncionesDocentes funciones={funciones} />
           </div>
         </section>
+       
+      <div>
+      <section>
+       
+        {/* Imagenes carrusel (solo si se usa) */}
 
+                <ImagenesCarrusel />
+
+
+      
+      </section>
+
+      </div>
         {/* Nueva sección con FeatureCard */}
        <section className="bg-gray-100 text-black py-20 px-4 md:px-8">
   <h2 className="text-4xl font-bold text-teal-500 mb-12 text-center">
@@ -110,7 +121,7 @@ const funciones = [
           <h2 className="text-center text-3xl font-bold text-pink-700 mb-10">
             Nuestros usuarios lo dicen mejor
           </h2>
-          <TestimonioSlider />
+          
         </section>
       </main>
  {/* Footer */}
