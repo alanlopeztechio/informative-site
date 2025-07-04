@@ -1,6 +1,7 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
 
+
 interface FeatureCardProps {
   icon?: LucideIcon;       // Componente de ícono opcional
   emoji?: string;          // Emoji alternativo si no hay ícono
@@ -8,7 +9,6 @@ interface FeatureCardProps {
   description?: string;
   points: string[];
 }
-
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, emoji, title, description, points }) => {
   return (
  <div className="bg-white text-gray-800 rounded-lg p-6 shadow-md flex flex-col md:flex-row gap-4 items-start">

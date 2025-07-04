@@ -4,7 +4,9 @@ import FuncionesDocentes from "@/components/FuncionesDocentes";
 import TestimonioSlider from "@/components/TestimonioSlider";
 import HeroSection from "@/components/HeroMaestros/HeroSectionMaestros";
 import FeatureCard from "@/components/FeatureCard";
-import { BarChart3, GraduationCap } from "lucide-react";
+import { BarChart3, GraduationCap, FileLock} from "lucide-react";
+
+
 
 const MaestrosPage: React.FC = () => {
   const funciones: string[] = [
@@ -36,6 +38,15 @@ const MaestrosPage: React.FC = () => {
         "Moderniza tu práctica con tecnología fácil y eficaz.",
         "Participa en capacitaciones y tutoriales incluidos en la plataforma.",
         "Colabora con otros docentes desde un entorno centralizado.",
+      ],
+    },
+     {
+      icon: FileLock,
+      title: "Seguridad y respaldo en tu trabajo",
+      points: [
+        "Autenticacion con usuario y contraseña segura,con opción a doble verificacion(2FA)",
+        "*Infraestructura en servidores seguros de alto rendimiento (AWS / Azure / Google Cloud).",
+        "*Actualizaciones de seguridad frecuentes para proteger contra vulnerabilidades.",
       ],
     },
   ];
