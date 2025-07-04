@@ -131,11 +131,6 @@ export default function Home() {
           <p className="text-lg text-gray-700">Desde <strong className="text-blue-700">$199 MXN</strong> al mes</p>
         </section>
 
-        <section id="contacto" className="py-20 text-center">
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Contáctanos</h2>
-          <p>📧 ventas@controlescolar.com</p>
-          <p>📱 <a href="https://wa.me/5215555555555" className="text-green-600 underline">WhatsApp</a></p>
-        </section>
       </main>
   {/* Footer */}
       <div>
