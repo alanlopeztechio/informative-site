@@ -18,25 +18,37 @@ export default function Navbar() {
         <h1 className="text-lg font-bold">Control Escolar</h1>
 
         {/* Desktop */}
-        <NavigationMenu className="flex-1">
-          <NavigationMenuList className="flex justify-center gap-6 w-full">
-            <NavigationMenuItem>
-              <Link href="#inicio">Inicio</Link>
+        <NavigationMenu className="hidden md:flex">
+          <NavigationMenuList className="flex gap-6">
+            <NavigationMenuItem className="text-white  p-1.75 px-4 rounded-lg hover:bg-gray-600">
+              <Link href="/">Inicio</Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+              <NavigationMenuTrigger className="text-white p-4 hover:bg-gray-600">
                 Quien lo usa?
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+              <NavigationMenuContent className="bg-gray-700 text-white p-4">
                 <ul className="grid gap-2 min-w-[200px]">
                   <li>
-                    <Link href="#modulo1" className="hover:underline">
+                    {" "}
+                    <Link
+                      href="/directores"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
                       Dueños y Directores
                     </Link>
                   </li>
-                  <Link href="/maestro/maestros">Profesores y Educadores</Link>
+                  <Link
+                    href="/maestro"
+                    className="p-1 px-2 rounded hover:bg-gray-600"
+                  >
+                    Profesores y Educadores
+                  </Link>
                   <li>
-                    <Link href="#modulo3" className="hover:underline">
+                    <Link
+                      href="#modulo3"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
                       Padres y Alumnos
                     </Link>
                   </li>
@@ -44,40 +56,40 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-white p-4 rounded shadow">
+              <NavigationMenuTrigger className="text-white p-4 hover:bg-gray-600">
                 Módulos
               </NavigationMenuTrigger>
-              <NavigationMenuContent className="bg-transparent text-black p-4 rounded shadow">
+              <NavigationMenuContent className="bg-gray-700 text-white p-4">
                 <ul className="grid gap-2 min-w-[200px]">
                   <li>
-                    <Link href="#modulo1" className="hover:underline">
+                    <Link
+                      href="/modulos/academico"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
                       Módulo Académico
                     </Link>
                   </li>
                   <li>
-                    <Link href="#modulo2" className="hover:underline">
-                      Módulo Comunicación
+                    <Link
+                      href="/modulos/notificaciones"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Módulo Notificaciones
                     </Link>
                   </li>
                   <li>
-                    <Link href="#modulo3" className="hover:underline">
+                    <Link
+                      href="/modulos/financiero"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
                       Módulo Financiero
                     </Link>
                   </li>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <button className="bg-red-800 text-white py-2 px-4 rounded">
-                Solicitar Demo
-              </button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
+            <NavigationMenuItem className="text-white p-1.75 px-4 rounded-lg hover:bg-gray-600">
               <Link href="#contacto">Contacto</Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href="/about_us/">Acerca de Nosotros</Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -89,11 +101,72 @@ export default function Navbar() {
               <Menu />
             </button>
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="bg-gray-700 text-white">
+            <h2 className="sr-only">Menú de navegación</h2>
             <nav className="flex flex-col gap-4 mt-10">
-              <Link href="#inicio">Inicio</Link>
-              <Link href="#funciones">Funciones</Link>
-              <Link href="#precios">Precios</Link>
+              <Link href="/">Inicio</Link>
+              <details>
+                <summary className="cursor-pointer py-2 px-1 font-semibold">
+                  Quien lo usa?
+                </summary>
+                <ul className="flex flex-col gap-2 pl-4 mt-2">
+                  <li>
+                    <Link
+                      href="/directores"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Dueños y Directores
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/maestro"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Profesores y Educadores
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#modulo3"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Padres y Alumnos
+                    </Link>
+                  </li>
+                </ul>
+              </details>
+              <details>
+                <summary className="cursor-pointer py-2 px-1 font-semibold">
+                  Módulos
+                </summary>
+                <ul className="flex flex-col gap-2 pl-4 mt-2">
+                  <li>
+                    <Link
+                      href="/modulos/academico"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Módulo Académico
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modulos/comunicacion"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Módulo Notificaciones
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/modulos/financiero"
+                      className="p-1 px-2 rounded hover:bg-gray-600"
+                    >
+                      Módulo Financiero
+                    </Link>
+                  </li>
+                </ul>
+              </details>
               <Link href="#contacto">Contacto</Link>
             </nav>
           </SheetContent>
