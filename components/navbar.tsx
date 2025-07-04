@@ -46,7 +46,7 @@ export default function Navbar() {
                   </Link>
                   <li>
                     <Link
-                      href="#modulo3"
+                     href="/padres"
                       className="p-1 px-2 rounded hover:bg-gray-600"
                     >
                       Padres y Alumnos
