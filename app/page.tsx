@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar"
 import Image from "next/image"
 import { useState } from "react"
 import { GraduationCap, MessageSquareText, BadgeDollarSign } from "lucide-react"
-
+import SchoolFooter from "@/components/school-footer";
 export default function Home() {
   const modulos = [
     {
@@ -138,9 +138,10 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-gray-700 text-white py-4 text-center">
-        <p>&copy; 2025 Control Escolar</p>
-      </footer>
+      <div>
+       
+        <SchoolFooter/>
+      </div>
     </>
   )
 }

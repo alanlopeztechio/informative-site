@@ -69,7 +69,7 @@ const MaestrosPage: React.FC = () => {
         <section id="funciones-docentes" className="py-20 text-center bg-gray-100">
           <div className="max-w-4xl mx-auto bg-white rounded-lg shadow p-10">
            <h2 className="text-4xl font-bold text-teal-500 mb-12 text-center">
-    ¿Qué ofrecemos para los usuarios?
+    Caracteristicas mejoradas
   </h2>
             <p className="text-gray-700 text-center mb-8">
               Nuestra plataforma brinda herramientas completas para que los docentes gestionen su trabajo fácilmente.
