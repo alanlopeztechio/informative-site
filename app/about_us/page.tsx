@@ -16,6 +16,7 @@ import React from "react";
 import { Textarea } from "@/components/ui/textarea";
 import { Send } from "lucide-react";
 import Navbar from "@/components/navbar";
+import SchoolFooter from "@/components/school-footer";
 
 export default function page() {
   const users = [
@@ -39,7 +40,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <section className="bg-white py-16">
+      <section className="bg-white pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -196,6 +197,7 @@ export default function page() {
           </div>
         </div>
       </section>
+      <SchoolFooter />
     </>
   );
 }

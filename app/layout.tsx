@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const open_sans = Open_Sans({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${open_sans.className}  antialiased`}>{children}</body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

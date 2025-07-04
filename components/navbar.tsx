@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 bg-gray-700 text-white shadow">
-      <div className="container mx-auto px-4 py-3 flex items-center">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <h1 className="text-lg font-bold">Control Escolar</h1>
 
         {/* Desktop */}
@@ -89,7 +89,7 @@ export default function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem className="text-white p-1.75 px-4 rounded-lg hover:bg-gray-600">
-              <Link href="#contacto">Contacto</Link>
+              <Link href="/about_us">Acerca</Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
