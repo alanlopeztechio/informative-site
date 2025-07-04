@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "@/components/navbar";
-import FuncionesDocentes from "@/components/FuncionesDocentes";
 import HeroSection from "@/components/HeroPadres/HeroSectionPadres";
 import FeatureCard from "@/components/FeatureCard";
 import { BarChart3, GraduationCap, FileLock} from "lucide-react";
@@ -8,15 +7,6 @@ import SchoolFooter from "@/components/school-footer";
 import ImagenesCarrusel from "@/components/imagenes-carrusel";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel"
 import { testimonials } from "@/data/testimonials"
-import {
-  CalendarCheck,
-  Upload,
-  FileText,
-  Clock,
-  MessageSquare,
-  Download,
-} from "lucide-react";
-
 
 const MaestrosPage: React.FC = () => {
 
