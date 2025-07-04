@@ -1,25 +1,11 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from '@/components/navbar'
-import { User, GraduationCap, ClipboardList, ListTodo, FileDown, Calendar } from 'lucide-react';
+import { User, GraduationCap, ClipboardList, ListTodo, FileDown, Calendar, CreditCard, Landmark, SlidersVertical, Hourglass, Handshake } from 'lucide-react';
 import Image from 'next/image';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 
 export default function FinancieroPage() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-  const faqs = [
-    {
-      question: '¿Cómo se integra el módulo financiero con otros módulos?',
-      answer: 'El módulo financiero se integra de manera fluida con los módulos académico y de comunicación, permitiendo una gestión integral de la institución.'
-    },
-    {
-      question: '¿Qué métodos de pago se aceptan?',
-      answer: 'Aceptamos pagos en línea, transferencias bancarias y pagos en efectivo a través de convenios con bancos aliados.'
-    },
-    {
-      question: '¿Cómo se generan los reportes financieros?',
-      answer: 'Los reportes financieros se generan automáticamente y pueden personalizarse según las necesidades de la institución.'
-    }
-  ];
   const ventajas = [
     {
       icon: <User className="w-6 h-6 text-white" />,
@@ -96,7 +82,7 @@ export default function FinancieroPage() {
       <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">¿Por qué implementar un sistema de control de pagos escolares?</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-800 text-base">
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/controlar.png" alt="Controlar Pagos" width={80} height={80} className="w-19 h-auto mb-2" />
+          <SlidersVertical className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">90%</span>{' '}
             <span className="font-bold">menos errores</span> en<br />
@@ -105,7 +91,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/fin-de-reloj-de-arena.png" alt="Controlar Pagos" width={70} height={70} className="w-20 h-auto mb-2" />
+          <Hourglass className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">40%</span>{' '}
             <span className="font-bold">de tiempo ahorrado</span> en tareas<br />
@@ -113,7 +99,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/tarjeta-de-credito.png" alt="Controlar Pagos" width={100} height={100} className="w-21 h-auto mb-2" />
+          <CreditCard className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">25%</span>{' '}
             <span className="font-bold">más pagos realizados</span> gracias a la<br />
@@ -121,7 +107,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/busqueda.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Handshake className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">73%</span>{' '}
             <span className="font-bold">mejora en la transparencia<br /></span> con reportes 
@@ -129,7 +115,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/usuarios-alt.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <User className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">30%</span>{' '}
             <span className="font-bold">más satisfacción<br /></span>por pagos en línea y<br />
@@ -137,7 +123,7 @@ export default function FinancieroPage() {
           </p>
         </li>
         <li className="flex flex-col items-center text-center">
-          <Image src="/iconos/documento-firmado.png" alt="Controlar Pagos" width={80} height={80} className="w-20 h-auto mb-2" />
+          <Landmark className="w-16 h-16 text-blue-700 mb-2" />
           <p>
             <span className="font-bold text-xl">50%</span>{' '}
             <span className="font-bold">menos riesgo de sanciones fiscales </span>gracias a la facturación automática y 
@@ -209,24 +195,34 @@ export default function FinancieroPage() {
     </section>
       <section>
         {/* Preguntas frecuentes */}
-        <div className="container mx-auto px-4 py-20">  
-          <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">Preguntas Frecuentes</h2>
-          <div className="space-y-6">
-            {faqs.map((faq, idx) => (
-              <div key={idx}>
-                <button
-                  className="w-full text-left text-xl font-semibold focus:outline-none flex justify-between items-center py-2"
-                  onClick={() => setOpenFAQ(openFAQ === idx ? null : idx)}
-                  aria-expanded={openFAQ === idx}
-                >
-                  {faq.question}
-                  <span className="ml-2">{openFAQ === idx ? '-' : '+'}</span>
-                </button>
-                {openFAQ === idx && (
-                  <p className="text-gray-700 mt-2 transition-all duration-300">{faq.answer}</p>
-                )}
-              </div>
-            ))}
+        <div className="container mx-auto px-4 py-20 flex flex-col items-center">  
+          <h2 className="text-4xl font-bold text-blue-800 mb-10 text-center">Preguntas Frecuentes</h2>
+          <div className="w-full max-w-2xl">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-xl">¿Cómo se integra el módulo financiero con otros módulos?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-lg text-balance">
+                  El módulo financiero se integra de manera fluida con los módulos académico y de comunicación, permitiendo una gestión integral de la institución.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-xl">¿Qué métodos de pago se aceptan?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-lg text-balance">
+                  Aceptamos pagos en línea, transferencias bancarias y pagos en efectivo a través de convenios con bancos aliados.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-xl">¿Cómo se generan los reportes financieros?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-lg text-balance">
+                  Los reportes financieros se generan automáticamente y pueden personalizarse según las necesidades de la institución.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
