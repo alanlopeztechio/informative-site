@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar'
 import { User, GraduationCap, ClipboardList, ListTodo, FileDown, Calendar, CreditCard, Landmark, SlidersVertical, Hourglass, Handshake } from 'lucide-react';
 import Image from 'next/image';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
+import SchoolFooter from '@/components/school-footer';
 
 export default function FinancieroPage() {
   const ventajas = [
@@ -227,9 +228,7 @@ export default function FinancieroPage() {
         </div>
       </section>
     </main>
-    <footer className="bg-gray-700 text-white py-4 text-center w-full mt-auto">
-        <p>&copy; 2025 Control Escolar</p>
-      </footer>
+    <SchoolFooter />
     </>
   )
 }

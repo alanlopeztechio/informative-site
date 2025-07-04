@@ -3,6 +3,7 @@ import Navbar from '@/components/navbar'
 import { Bell, Mail, Smartphone, Users, Calendar, MessageSquare } from 'lucide-react';
 import Image from 'next/image';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
+import SchoolFooter from '@/components/school-footer';
 
 export default function NotificacionesPage() {
   const ventajas = [
@@ -193,9 +194,7 @@ export default function NotificacionesPage() {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-700 text-white py-4 text-center">
-        <p>&copy; 2025 Control Escolar</p>
-      </footer>
+      <SchoolFooter />
     </>
   )
 }
