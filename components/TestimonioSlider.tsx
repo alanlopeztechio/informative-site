@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import TestimonioCard from "./TestimonioCard";
-import Image from "next/image";
 
 
 interface Testimonio {
