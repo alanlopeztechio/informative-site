@@ -80,7 +80,7 @@ const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({ testimonial
                     {renderStars(testimonials[currentIndex].rating)}
                   </div>
                   <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 italic">
-                    "{testimonials[currentIndex].content}"
+                    {testimonials[currentIndex].content}
                   </blockquote>
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-1">{testimonials[currentIndex].name}</h4>
