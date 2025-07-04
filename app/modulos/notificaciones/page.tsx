@@ -194,7 +194,9 @@ export default function NotificacionesPage() {
           </div>
         </section>
       </main>
-      <SchoolFooter />
+      <div>
+          <SchoolFooter />
+          </div>
     </>
   )
 }

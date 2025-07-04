@@ -228,7 +228,9 @@ export default function FinancieroPage() {
         </div>
       </section>
     </main>
-    <SchoolFooter />
+    <div>
+        <SchoolFooter />
+        </div>
     </>
   )
 }

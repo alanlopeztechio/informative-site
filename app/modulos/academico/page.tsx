@@ -228,7 +228,9 @@ export default function AcademicoPage() {
         </div>
       </section>
     </main>
+    <div>
     <SchoolFooter />
+    </div>
     </>
   )
 }
