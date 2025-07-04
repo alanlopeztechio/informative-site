@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-white min-h-[90vh] flex items-center justify-center px-6">
+    <section className="w-full bg-white min-h-[40vh] flex items-center justify-center px-5">
+
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-8">
         
         {/* Texto principal */}

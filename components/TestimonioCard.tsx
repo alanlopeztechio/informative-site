@@ -20,11 +20,7 @@ const TestimonioCard: React.FC<TestimonialProps> = ({
     <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md overflow-hidden transition-all duration-500">
       {/* Imagen */}
       <div className="md:w-1/2 flex justify-center items-center p-6">
-        <img
-          src={imageUrl}
-          alt={`Foto de ${name}`}
-          className="rounded-lg object-cover h-64 w-64"
-        />
+        
       </div>
 
       {/* Texto */}

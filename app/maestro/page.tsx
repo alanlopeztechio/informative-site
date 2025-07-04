@@ -4,7 +4,7 @@ import FuncionesDocentes from "@/components/FuncionesDocentes";
 import TestimonioSlider from "@/components/TestimonioSlider";
 import HeroSection from "@/components/HeroMaestros/HeroSectionMaestros";
 import FeatureCard from "@/components/FeatureCard";
-import { BarChart3, GraduationCap, FileLock, SquareCheck} from "lucide-react";
+import { BarChart3, GraduationCap, FileLock} from "lucide-react";
 import SchoolFooter from "@/components/school-footer";
 import {
   CalendarCheck,
@@ -69,7 +69,7 @@ const funciones = [
         {/* Portada */}
         <section
           id="inicio"
-          className="bg-cover bg-center text-black py-28 px-6"
+          className="bg-center text-black  px-6"
           style={{ backgroundImage: "url(/assets/background3.jpg)" }}
         >
           <HeroSection />
@@ -77,8 +77,8 @@ const funciones = [
 
         {/* Funciones docentes */}
         <section id="funciones-docentes" className="py-20 text-center bg-gray-100">
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow p-10">
-           <h2 className="text-4xl font-bold text-teal-500 mb-12 text-center">
+          <div className="max-w-5xl mx-auto bg-white rounded-lg shadow p-10">
+           <h2 className="text-4xl font-bold text-teal-700 mb-12 text-center">
     Caracteristicas mejoradas
   </h2>
             <p className="text-gray-700 text-center mb-8">
@@ -93,7 +93,6 @@ const funciones = [
   <h2 className="text-4xl font-bold text-teal-500 mb-12 text-center">
     ¿Qué ofrecemos para los usuarios?
   </h2>
-
   <div className="space-y-10 max-w-5xl mx-auto">
     {secciones.map((sec, i) => (
       <FeatureCard
@@ -106,9 +105,6 @@ const funciones = [
     ))}
   </div>
 </section>
-
-
-
         {/* Testimonios slider */}
         <section id="testimonios" className="py-20 text-center bg-gray-100">
           <h2 className="text-center text-3xl font-bold text-pink-700 mb-10">
