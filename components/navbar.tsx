@@ -34,7 +34,7 @@ export default function Navbar() {
                 <NavigationMenuContent className="bg-gray-700 text-white p-4">
                         <ul className="grid gap-2 min-w-[200px]">
                             <li><Link href="/modulos/academico" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Académico</Link></li>
-                            <li><Link href="/modulos/comunicacion" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Notificaciones</Link></li>
+                            <li><Link href="/modulos/notificaciones" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Notificaciones</Link></li>
                             <li><Link href="/modulos/financiero" className='p-1 px-2 rounded hover:bg-gray-600'>Módulo Financiero</Link></li>
                         </ul>
                     </NavigationMenuContent>
