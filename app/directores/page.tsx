@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
@@ -7,6 +8,8 @@ import { BarChart3, GraduationCap, FileLock} from "lucide-react";
 import FeatureCard from "@/components/FeatureCard";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel"
 import { testimonials } from "@/data/testimonials"
+import CustomButton from "@/components/ui/CustomButton";
+
 
 
 
@@ -72,6 +75,7 @@ const MaestrosPage: React.FC = () => {
               informacion de docentes
             </p>
             <FuncionesDocentes funciones={funciones} />
+            
           </div>
         </section>
          {/* Caracteristicas */}
@@ -90,6 +94,13 @@ const MaestrosPage: React.FC = () => {
         points={sec.points}
       />
     ))}
+    <CustomButton
+        text="Solicita una demo"
+        size="md"
+        variant="secondary"
+        showIcon={true}
+        onClick={() => alert("Cita agendada")}
+      />
   </div>
 </section>
 
