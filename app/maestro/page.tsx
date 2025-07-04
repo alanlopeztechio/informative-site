@@ -4,19 +4,29 @@ import FuncionesDocentes from "@/components/FuncionesDocentes";
 import TestimonioSlider from "@/components/TestimonioSlider";
 import HeroSection from "@/components/HeroMaestros/HeroSectionMaestros";
 import FeatureCard from "@/components/FeatureCard";
-import { BarChart3, GraduationCap, FileLock} from "lucide-react";
-
+import { BarChart3, GraduationCap, FileLock, SquareCheck} from "lucide-react";
+import SchoolFooter from "@/components/school-footer";
+import {
+  CalendarCheck,
+  Upload,
+  FileText,
+  Clock,
+  MessageSquare,
+  Download,
+} from "lucide-react";
 
 
 const MaestrosPage: React.FC = () => {
-  const funciones: string[] = [
-    "Tomar asistencia en línea",
-    "Subir calificaciones",
-    "Crear y evaluar tareas",
-    "Revisar su horario de clases",
-    "Enviar mensajes a padres o alumnos",
-    "Descargar reportes por grupo o materia",
-  ];
+
+const funciones = [
+  { texto: "Tomar asistencia en línea", icono: <CalendarCheck className="text-teal-600" /> },
+  { texto: "Subir calificaciones", icono: <Upload className="text-teal-600" /> },
+  { texto: "Crear y evaluar tareas", icono: <FileText className="text-teal-600" /> },
+  { texto: "Revisar su horario de clases", icono: <Clock className="text-teal-600" /> },
+  { texto: "Enviar mensajes a padres o alumnos", icono: <MessageSquare className="text-teal-600" /> },
+  { texto: "Descargar reportes por grupo o materia", icono: <Download className="text-teal-600" /> },
+];
+
 
   const secciones = [
     {
@@ -107,11 +117,13 @@ const MaestrosPage: React.FC = () => {
           <TestimonioSlider />
         </section>
       </main>
+ {/* Footer */}
+      <div>
+       
+        <SchoolFooter/>
+      </div>
+          
 
-      {/* Footer */}
-      <footer className="bg-gray-700 text-white py-4 text-center">
-        <p>&copy; 2025 Control Escolar</p>
-      </footer>
     </>
   );
 };

@@ -137,7 +137,7 @@ export default function Home() {
           <p>📱 <a href="https://wa.me/5215555555555" className="text-green-600 underline">WhatsApp</a></p>
         </section>
       </main>
-
+  {/* Footer */}
       <div>
        
         <SchoolFooter/>

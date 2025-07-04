@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import FuncionesDocentes from "@/components/FuncionesDocentes";
 import HeroSection from "@/components/Directores/HeroSectionDirectores";     
+import SchoolFooter from "@/components/school-footer";
 
 
 const MaestrosPage: React.FC = () => {
@@ -42,10 +43,11 @@ const MaestrosPage: React.FC = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-700 text-white py-4 text-center">
-        <p>&copy; 2025 Control Escolar</p>
-      </footer>
+        {/* Footer */}
+            <div>
+             
+              <SchoolFooter/>
+            </div>
     </>
   );
 };
