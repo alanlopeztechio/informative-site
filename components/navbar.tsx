@@ -46,7 +46,7 @@ export default function Navbar() {
                   </Link>
                   <li>
                     <Link
-                     href="/padres"
+                      href="/padres"
                       className="p-1 px-2 rounded hover:bg-gray-600"
                     >
                       Padres y Alumnos
@@ -90,6 +90,9 @@ export default function Navbar() {
             </NavigationMenuItem>
             <NavigationMenuItem className="text-white p-1.75 px-4 rounded-lg hover:bg-gray-600">
               <Link href="/about_us">Acerca</Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem className="text-white p-1.75 px-4 rounded-lg hover:bg-gray-600">
+              <Link href="/pricing">Precio</Link>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -167,7 +170,8 @@ export default function Navbar() {
                   </li>
                 </ul>
               </details>
-              <Link href="#contacto">Contacto</Link>
+              <Link href="/about_us">Acerca</Link>
+              <Link href="/pricing">Precio</Link>
             </nav>
           </SheetContent>
         </Sheet>
