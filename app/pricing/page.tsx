@@ -47,7 +47,7 @@ export default function PricingPage() {
     <>
       <Navbar />
       <div className="min-h-screen pt-24 pb-16">
-        <div className="container py-16">
+        <div className="container mx-auto py-16">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-center">
             Precios
           </h1>
